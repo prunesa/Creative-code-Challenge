@@ -1,0 +1,20 @@
+const stepSize = 30;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  fill(69,58,200);
+}
+
+function draw() {
+  background (255);
+  
+    let currentStep = frameCount % stepSize;
+  let startingY = currentStep * 2 - stepSize;
+  
+   for(let i = startingY; i < height; i = i + stepSize * 2)
+  
+    circle(width/2, height/2, i );
+    stroke(180,70,93);
+    strokeWeight(4);
+    noFill();  
+}
