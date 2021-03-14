@@ -8,6 +8,7 @@ function setup() {
   }else{
     maxDimension = width;
 }
+}
 
 function draw() {
   background (255);
@@ -16,9 +17,12 @@ function draw() {
   let startingY = currentStep * 2 - stepSize;
   
    for(let i = startingY; i < maxDimension*2; i = i + stepSize * 2)
+     for(let j = 0; j<20 ; j= j+2)
+  
+   
   
     circle(width/2, height/2, i );
     stroke(180,70,93);
-    strokeWeight(2);
+    strokeWeight(j);
     noFill();  
 }
