@@ -3,6 +3,10 @@ const stepSize = 30;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   fill(69,58,200);
+  if(width < height){
+    maxDimension = height;
+  }else{
+    maxDimension = width;
 }
 
 function draw() {
@@ -15,6 +19,8 @@ function draw() {
   
     circle(width/2, height/2, i );
     stroke(180,70,93);
-    strokeWeight(4);
+
+  for(let j = 0; j<10; j=++)
+    strokeWeight(j);
     noFill();  
 }
